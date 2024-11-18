@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <div class="cursor"></div>
+    <header>
+       
+        <div class="container">
+            <span class="fast-flicker">BASS</span><span class="flicker">EM</span>
+            <nav>
+                
+                <ul>
+                    <li><a href="site.html">Accueil</a></li>
+                    <li><a href="site.html#projets">Projets</a></li>
+                    <li><a href="site.html#contact">Contact</a></li>
+                    <li><a href="CV- Bassem.pdf">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil" class="section ">
+        <div class="container">
+            <img src='bassem.png'alt="Description de l'image" class="image-arrondie">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Je suis un développeur web passionné, et étudiant en Cybersécurité, voici quelques-uns de mes projets récents.</p>
+        </div>
+    </section>
+
+    
+    <section id="projets" class="section">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projets">
+                <a href="projet1.html" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 1</h3>
+                        <p>Réalisation d'un test de pénétration sur une machine vulnérable </p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+                <a href="projet2.html" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 2</h3>
+                        <p>Réalisation d'un piano en HTML, CSS, javascript</p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+                <a href="projet3.html" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 3</h3>
+                        <p>Réalisation d'un blog personnel a l'aide de HUGO</p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+                <a href="projet4.html" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 4</h3>
+                        <p>Réalisation d'un enquete sur une entreprise grace a l'OSINT</p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+                <a href="https://example.com/projet5" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 5</h3>
+                        <p>Réalisation d'un outil d'OSINT</p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+                <a href="https://example.com/projet6" class="glow-on-hover">
+                    <div>
+                        <h3>Projet 6</h3>
+                        <p>Réalisation d'une mise en place de serveurs d'une entreprise</p>
+                    </div>
+                    <div class="stars-container"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contactez-nous !</h2>
+            <form action="#" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jawad de Bagnolet</p>
+        </div>
+    </footer>
+<script src="javascript.js"></script>
+</body>
+</html>
