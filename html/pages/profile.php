@@ -58,22 +58,22 @@
             <button type="submit">Rechercher</button>
         </form>
         <?php
-            function getApiData($suffix) {
-                $curl_obj = curl_init();
-                $cooked_url = "https://api.pwnedpasswords.com/range/" . $suffix;
-                curl_setopt($curl_obj, CURLOPT_URL, $cooked_url);
-                $output = curl_exec($curl_obj);
-                curl_close($curl_obj);
-            }
+            // function getApiData($suffix) {
+            //     $curl_obj = curl_init();
+            //     $cooked_url = "https://api.pwnedpasswords.com/range/" . $suffix;
+            //     curl_setopt($curl_obj, CURLOPT_URL, $cooked_url);
+            //     $output = curl_exec($curl_obj);
+            //     curl_close($curl_obj);
+            // }
 
-            function passwordCheck($password_to_check) {
-                $hashed_password_to_check = hash('sha1',$password_to_check);
-                $suffix = substr($hashed_password_to_check, 0, 5);
-                getApiData($suffix);
-            }
+            // function passwordCheck($password_to_check) {
+            //     $hashed_password_to_check = hash('sha1',$password_to_check);
+            //     $suffix = substr($hashed_password_to_check, 0, 5);
+            //     getApiData($suffix);
+            // }
 
-            $password_to_check = $_POST['password_to_check'];
-            passwordCheck($password_to_check);
+            // $password_to_check = $_POST['password_to_check'];
+            // passwordCheck($password_to_check);
         ?> 
     </section>
 </body>

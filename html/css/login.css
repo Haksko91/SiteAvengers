@@ -62,10 +62,11 @@
 
 
 .form{
-  margin: auto;
-  margin-top: 100px;
-
-
+  max-width: 500px;
+  margin: 50px auto; /* Centrer horizontalement la section */
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5px;
 }
 
   .register-a {

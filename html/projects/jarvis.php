@@ -9,6 +9,21 @@
     
 </head>
 <body>
+
+<?php
+    session_start();
+
+
+    if (!isset($_SESSION['id'])) {
+        
+        $hidePage = true;  
+    } else {
+        $hidePage = false;  
+        
+    }
+?>
+
+
     <?php
         require_once(__DIR__."/../config/mysql.php");
         require_once(__DIR__."/../config/databaseconnect.php");
@@ -156,9 +171,17 @@ const suggestions = await jarvis.getSuggestions();
         });
       </script>
 
-    <footer>
-        <p>© 2024 Anthony Stark. Tous droits réservés.</p>
-    </footer>
+<?php
+    if (!isset($_SESSION['id'])) {
+        
+        $hidePage = true;  
+        echo "<footer class='fixeddd'> <p>© 2024 Anthony Stark. Tous droits réservés.</p> </footer>";
+    } else {
+        $hidePage = false;  
+        echo "<footer> <p>© 2024 Anthony Stark. Tous droits réservés.</p> </footer>";
+        
+    }
+?>
 
 </body>
 </html>
